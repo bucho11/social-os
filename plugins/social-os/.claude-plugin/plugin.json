@@ -6,24 +6,9 @@
   "author": {
     "name": "Bucho"
   },
-  "keywords": [
-    "social-media",
-    "instagram",
-    "facebook",
-    "content",
-    "scheduling",
-    "canva",
-    "zernio",
-    "small-business",
-    "childcare",
-    "franchise"
-  ],
+  "keywords": ["social-media", "instagram", "facebook", "content", "scheduling", "canva", "zernio", "small-business", "childcare", "franchise"],
   "mcpServers": "./.mcp.json",
   "skills": "./skills/",
-  "agents": [
-    "./agents/compliance-reviewer.md"
-  ],
-  "hooks": "./hooks/hooks.json",
-  "homepage": "https://github.com/bucho11/social-os",
-  "repository": "https://github.com/bucho11/social-os"
+  "agents": ["./agents/compliance-reviewer.md"],
+  "hooks": "./hooks/hooks.json"
 }

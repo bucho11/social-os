@@ -15,24 +15,27 @@ plugin/                              ← becomes the repo root
     ├── agents/compliance-reviewer.md
     ├── hooks/hooks.json             ← optional PreToolUse safety net (OQ-014)
     ├── shared/                      ← guardrails, drive-conventions, post-packet, brain-layout, voice template
-    ├── drive-template/              ← seed docs for the owner's Drive brain
+    └── skills/brand-onboarding/assets/  ← seed docs for the Drive brain
     └── evals/evals.json
 ```
 
-## Install
+## Mint the repo (once)
 
-**Customize → Plugins → Personal plugins → "+" → Add marketplace → Add from a
-repository**, then paste:
-
+```bash
+git init social-os && cd social-os
+cp -r /path/to/AIOS-FRAMEWORK/social-os/plugin/. .
+# set repository/homepage in plugins/social-os/.claude-plugin/plugin.json
+git add -A && git commit -m "feat: social-os plugin v0.1.0"
+git remote add origin <the venture's GitHub URL>   # never an employer org
+git push -u origin main
 ```
-https://github.com/bucho11/social-os
-```
 
-Then install **Social OS** from that marketplace.
+## Install (what the client does, once)
 
-## Connect three things
+In Claude: **Customize → Plugins → Personal plugins → "+" → Add marketplace →
+Add from a repository** → paste the repo URL → install **Social OS**.
 
-After installing, connect, when prompted or under Customize → Connectors:
+Then connect, when prompted or under Customize → Connectors:
 1. **Google Drive** (native)
 2. **Canva** (native; sign in to her Canva **Pro**)
 3. **Zernio** (the plugin brings it; she signs in — no key to paste)
